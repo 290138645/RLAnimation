@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RLDrawerViewController">
+            <connections>
+                <outlet property="tv" destination="yuW-e5-MOg" id="76b-bp-H4f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yuW-e5-MOg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C0-Fn-jfa">
+                    <rect key="frame" x="304" y="398" width="100" height="100"/>
+                    <color key="backgroundColor" red="1" green="0.60392156860000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="TO7-Bb-M3y"/>
+                        <constraint firstAttribute="height" constant="100" id="VFY-yI-5Yr"/>
+                    </constraints>
+                    <state key="normal" title="点击特效"/>
+                    <connections>
+                        <action selector="buttonTrigger:" destination="-1" eventType="touchUpInside" id="ORg-8c-7Bi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="yuW-e5-MOg" secondAttribute="trailing" id="93I-Gd-tMj"/>
+                <constraint firstItem="5C0-Fn-jfa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Ucl-3D-ygk"/>
+                <constraint firstItem="yuW-e5-MOg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="V4s-fM-PB1"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="5C0-Fn-jfa" secondAttribute="trailing" constant="10" id="aX1-U7-Wqx"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="yuW-e5-MOg" secondAttribute="bottom" id="lgG-LB-H4u"/>
+                <constraint firstItem="yuW-e5-MOg" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="ncV-3S-nGF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+</document>

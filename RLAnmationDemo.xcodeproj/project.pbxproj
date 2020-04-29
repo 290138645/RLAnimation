@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC17BD26244AEBA2006FC2A5 /* RLDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC17BD25244AEBA2006FC2A5 /* RLDrawerView.m */; };
+		FC17BD29244AF1BA006FC2A5 /* SlideMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FC17BD28244AF1BA006FC2A5 /* SlideMenuButton.m */; };
+		FC3C00E4244705AE001FFA1F /* RLDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3C00E2244705AE001FFA1F /* RLDrawerViewController.m */; };
+		FC3C00E5244705AE001FFA1F /* RLDrawerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3C00E3244705AE001FFA1F /* RLDrawerViewController.xib */; };
 		FCF5C57A2445C56E0066FAAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF5C5792445C56E0066FAAB /* AppDelegate.m */; };
 		FCF5C57D2445C56E0066FAAB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF5C57C2445C56E0066FAAB /* SceneDelegate.m */; };
 		FCF5C5802445C56E0066FAAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF5C57F2445C56E0066FAAB /* ViewController.m */; };
@@ -23,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC17BD24244AEBA2006FC2A5 /* RLDrawerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLDrawerView.h; sourceTree = "<group>"; };
+		FC17BD25244AEBA2006FC2A5 /* RLDrawerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLDrawerView.m; sourceTree = "<group>"; };
+		FC17BD27244AF1BA006FC2A5 /* SlideMenuButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenuButton.h; sourceTree = "<group>"; };
+		FC17BD28244AF1BA006FC2A5 /* SlideMenuButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideMenuButton.m; sourceTree = "<group>"; };
+		FC3C00E1244705AE001FFA1F /* RLDrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLDrawerViewController.h; sourceTree = "<group>"; };
+		FC3C00E2244705AE001FFA1F /* RLDrawerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLDrawerViewController.m; sourceTree = "<group>"; };
+		FC3C00E3244705AE001FFA1F /* RLDrawerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RLDrawerViewController.xib; sourceTree = "<group>"; };
 		FCF5C5752445C56E0066FAAB /* RLAnmationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RLAnmationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF5C5782445C56E0066FAAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCF5C5792445C56E0066FAAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +69,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC3C00E02446FFB7001FFA1F /* 抽屉动画 */ = {
+			isa = PBXGroup;
+			children = (
+				FC17BD24244AEBA2006FC2A5 /* RLDrawerView.h */,
+				FC17BD25244AEBA2006FC2A5 /* RLDrawerView.m */,
+				FC3C00E1244705AE001FFA1F /* RLDrawerViewController.h */,
+				FC3C00E2244705AE001FFA1F /* RLDrawerViewController.m */,
+				FC3C00E3244705AE001FFA1F /* RLDrawerViewController.xib */,
+				FC17BD27244AF1BA006FC2A5 /* SlideMenuButton.h */,
+				FC17BD28244AF1BA006FC2A5 /* SlideMenuButton.m */,
+			);
+			path = "抽屉动画";
+			sourceTree = "<group>";
+		};
 		FCF5C56C2445C56E0066FAAB = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +117,7 @@
 				FCF5C5952445C63B0066FAAB /* HomeViewController.m */,
 				FCF5C5962445C63B0066FAAB /* HomeViewController.xib */,
 				FCF5C5992445C78E0066FAAB /* 圆球动画 */,
+				FC3C00E02446FFB7001FFA1F /* 抽屉动画 */,
 			);
 			path = RLAnmationDemo;
 			sourceTree = "<group>";
@@ -170,6 +196,7 @@
 				FCF5C5882445C5720066FAAB /* LaunchScreen.storyboard in Resources */,
 				FCF5C5A8244695B90066FAAB /* RLCircleViewController.xib in Resources */,
 				FCF5C5852445C5720066FAAB /* Assets.xcassets in Resources */,
+				FC3C00E5244705AE001FFA1F /* RLDrawerViewController.xib in Resources */,
 				FCF5C5832445C56E0066FAAB /* Main.storyboard in Resources */,
 				FCF5C5982445C63B0066FAAB /* HomeViewController.xib in Resources */,
 			);
@@ -183,12 +210,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCF5C5802445C56E0066FAAB /* ViewController.m in Sources */,
+				FC17BD26244AEBA2006FC2A5 /* RLDrawerView.m in Sources */,
 				FCF5C57A2445C56E0066FAAB /* AppDelegate.m in Sources */,
 				FCF5C5A7244695B90066FAAB /* RLCircleViewController.m in Sources */,
 				FCF5C58B2445C5720066FAAB /* main.m in Sources */,
 				FCF5C5A32446920E0066FAAB /* RLCircleView.m in Sources */,
 				FCF5C59F2445C8DA0066FAAB /* RLCircleLayer.m in Sources */,
 				FCF5C5972445C63B0066FAAB /* HomeViewController.m in Sources */,
+				FC17BD29244AF1BA006FC2A5 /* SlideMenuButton.m in Sources */,
+				FC3C00E4244705AE001FFA1F /* RLDrawerViewController.m in Sources */,
 				FCF5C57D2445C56E0066FAAB /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
